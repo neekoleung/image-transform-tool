@@ -4,16 +4,14 @@ A project from UIUC CS 400.
 ## [PNG.cpp](https://github.com/neekoleung/image-transform-tool/blob/master/uiuc/PNG.cpp)
 For loading and saving PNG files:
 * __bool PNG::readFromFile(const std::string & fileName)__: loads an image based on the provided
-file name, a text string. The return value shows success or failure. The meaning & is discussed in Week 3
-in the lecture about variable storage; it means a direct reference to the memory is being passed, similar
-to a pointer.
+file name, a text string. The return value shows success or failure. 
 * __bool PNG::writeToFile(const std::string & fileName)__: writes the current image to the provided
 file name (overwriting existing files).
 
 For retrieving pixel and image information:
 * __unsigned int PNG::width() const__: returns the width of the image.
 * __unsigned int PNG::height() const__: returns the height of the image.
-* __HSLAPixel & getPixel(unsigned int x, unsigned int y) __: returns a direct reference to a pixel at
+* __HSLAPixel & getPixel(unsigned int x, unsigned int y)__: returns a direct reference to a pixel at
 the specified location.
 
 Other methods:
